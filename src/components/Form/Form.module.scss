@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 35px;
+        width: 40%;
+        background: rgba(166, 0, 0, 0.65);
+        box-shadow: -5px -5px 30px #c10000, 5px 5px 30px #810000;
+        backdrop-filter: blur(15px);
+        border-radius: 40px;
+        margin-bottom: 50px;
+
+        header {
+            font: 1em "Ubuntu", sans-serif;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 250px;
+            margin: 30px 0;
+            background: rgba(132, 0, 0, 0.8);
+            box-shadow: inset 0px 0px 80px #750000;
+            border-radius: 20px;
+            cursor: pointer;
+
+            img {
+                width: 80px;
+            }
+
+            p {
+                font: 0.8em "Inter", sans-serif;
+            }
+
+            :where(img, p) {
+                opacity: 0.7;
+            }
+        }
+
+        .progressArea {
+            .content {
+                width: 100%;
+                margin-left: 15px;
+
+                .progress__details {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .uploadedArea {
+            .content {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .arrow {
+                width: 30px;
+            }
+
+            .uploaded__details {
+                display: flex;
+                margin-left: 15px;
+                flex-direction: column;
+            }
+
+            .details__size {
+                font-size: 0.45em;
+                color: rgb(235, 235, 235);
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #d25b5b;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            border-radius: 5px;
+
+            .file {
+                width: 35px;
+            }
+
+            span {
+                font-size: 0.6em;
+            }
+
+            .progressBar {
+                margin-top: 10px;
+                height: 6px;
+                width: 100%;
+                border-radius: 30px;
+                background: #fff;
+
+                .progress {
+                    height: 100%;
+                    width: 50%;
+                    border-radius: inherit;
+                    background: #840000;
+                }
+            }
+        }
+    }
+}
